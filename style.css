@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    /* border:dashed;  */
+    }
+
+body {
+    /* background-image: url("assets/rainbowvest.png"); */
+    background-color: rgb(245, 236, 186);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    font-family: 'Averia Serif Libre', cursive;
+    cursor: url('path-to-image-.png'), auto;
+}
+/* the main container */
+
+.card{
+ width:100%;
+ height:30%;
+  margin: 1em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.front-card{
+  background-image: url("assets/rainbowvestcopy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+h1{
+  /* to left align text */
+  font-size: 3em;
+  margin-top: 7%;
+  margin-left: 19%;
+
+}
+
+h2{
+  font-size: 1.5em;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-bottom: 1%;
+
+
+}
+
+h3{
+  font-size: 1.2em;
+  margin-top: 0%;
+  margin-left: 33%;
+  margin-bottom: 1%;
+  
+}
+
+h4{
+  font-size: 1.8em;
+  margin-top: 0%;
+  margin-left: 10%;
+
+}
+
+
+.icon-container{
+  /* controls the width of the overall container */
+  width:100%;
+  /* what enables the ue of css grid  */
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+/* what the svg files will be styled as on a page load */
+svg{
+  fill:rgb(235, 119, 219);
+  /* width:100%; */
+  /* height:auto; */
+  /* margin: 0 auto */
+}
+.transparent-box{
+  background-color: rgba(255, 255, 255, .7); 
+  margin-top: 7%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 7%;
+  border-radius: 20px;
+}
+
+svg:hover{
+  fill:rgb(3, 3, 3);
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  margin-left: 70%;
+  
+}
+
+svg{
+  fill:rgb(0, 0, 0);
+  margin-left: 70%;
+}
+
+svg:hover{
+  fill:rgb(2, 2, 2);
+  margin-left: 70%;
+}
+/* a different version of styling that is activated when smaller */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color:  rgb(245, 236, 186);
+  }
+  .card{
+  width:40%;
+  /* width:750px; */
+  /* height:400px; */
+}
+}
+/* a different version of the styling that is activated on just desktop machines  */
+@media only screen and (min-width: 800px) {
+  body {
+    background-color:  rgb(245, 236, 186)
+  }
+  .card{
+  width:70%;
+  height: 70%;
+  /* width:400px; */
+  /* height:750px; */
+  }
+  .transparent-box{
+    background-color: rgba(255, 255, 255, .7); 
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 7%;
+    border-radius: 20px;
+    height: 75%;
+ 
+  }
+
+    h1{
+      /* to left align text */
+      font-size: 6em;
+      margin-top: 7%;
+      margin-left: 20%;
+    
+    }
+    
+    h2{
+      font-size: 3em;
+      margin-top: 2%;
+      margin-left: 22%;
+      margin-bottom: 1%;
+    
+    
+    }
+    
+    h3{
+      font-size: 2.5em;
+      margin-top: 0%;
+      margin-left: 35%;
+      margin-bottom: 1%;
+      
+    }
+    
+    h4{
+      font-size: 3.5em;
+      margin-top: 0%;
+      margin-left: 12%;
+    
+    }
+
+}
